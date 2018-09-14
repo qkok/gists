@@ -40,4 +40,19 @@ def get_chunks(message, length):
 
   return new_message
 
-print(get_chunks("Hi, my name is Bob", 7));
+message = input('Message: ')
+valid_input = False
+
+while not valid_input:
+  try:
+    length = int(input('Length: '))
+    valid_input = True
+  except ValueError:
+    print('Invalid length')
+
+result = get_chunks(message, length)
+
+if result == -1:
+  print('A word exceeded the the given length')
+else:
+  print('Text chunks: ', result)

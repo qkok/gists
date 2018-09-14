@@ -31,5 +31,36 @@ def bin(values, value, low, high):
 
   return - 1
 
-values = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-print(bin(values, 9, 0, 9))
+# get the list of values
+values = []
+value = input('Enter value ([x] to stop): ')
+
+while value != 'x':
+  try:
+    value = int(value)
+    values.append(value)
+    value = input('Enter value ([x] to stop): ')
+  except ValueError:
+    print('Invalid value')
+    value = input('Enter value ([x] to stop): ')
+
+# get the search values
+valid_input = False
+
+while not valid_input:
+  try:
+    search = int(input('Search value: '))
+    valid_input = True
+  except ValueError:
+    print('Invalid value')
+
+sorted_values = sorted(values)
+
+print('Sorted list: ', sorted(values))
+
+result = bin(sorted(values), search, 0, len(values))
+
+if result == -1:
+  print('Search value not found')
+else:
+  print('Value found at index: ', result)
