@@ -10,7 +10,7 @@ Runs a binary search on a sorted list.
 
 ### Collatz Conjecture
 
-Proves the Collatz conjecture (https://en.wikipedia.org/wiki/Collatz_conjecture).
+Proves the [Collatz conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture).
 
 This function runs recursively to get the next number according to the Collatz conjecture and returns the number of iterations before reaching 1.
 
