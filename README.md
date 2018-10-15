@@ -17,3 +17,9 @@ This function runs recursively to get the next number according to the Collatz c
 ### Text Chunks
 
 Takes a string and breaks it up into chunks of a given size.
+
+## PHP
+
+### Fibonacci sequence
+
+Calcultes the Fibonacci sequence up to a specified number of iterations.
