@@ -20,6 +20,12 @@ Takes a string and breaks it up into chunks of a given size.
 
 ## PHP
 
-### Fibonacci sequence
+### Fibonacci Sequence
 
 Calcultes the Fibonacci sequence up to a specified number of iterations.
+
+## JavaScript
+
+### Palindrome Checker
+
+Checks whether input is a palindrome
