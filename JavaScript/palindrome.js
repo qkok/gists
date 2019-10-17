@@ -1,5 +1,6 @@
 // input from terminal
 const readline = require('readline');
+
 let rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
@@ -23,6 +24,6 @@ rl.question('Word: ', function (word) {
  * @return {boolean} Whether or not the word is a palindrome
  */
 function isPalindrome(word) {
-  return word.toUpperCase() == word.split('').reverse().join('').toUpperCase();
+  word = word.toUpperCase();
+  return word== word.split('').reverse().join('');
 }
-
