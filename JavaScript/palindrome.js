@@ -25,5 +25,5 @@ rl.question('Word: ', function (word) {
  */
 function isPalindrome(word) {
   word = word.toUpperCase();
-  return word== word.split('').reverse().join('');
+  return word == word.split('').reverse().join('');
 }
